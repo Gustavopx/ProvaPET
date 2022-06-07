@@ -8,7 +8,7 @@ export async function inserirPet(pet) {
 
         `
     const resposta = await con.query(comando, [pet.nome])
-    return resposta[0]
+    return resposta[0];
 }
 
 export async function listarPets() {
